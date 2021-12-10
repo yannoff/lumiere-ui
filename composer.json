@@ -20,6 +20,7 @@
     },
     "require-dev": {
         "illuminate/view": "*",
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "illuminate/foundation": "*"
     }
 }
