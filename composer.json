@@ -1,0 +1,32 @@
+{
+    "name": "yannoff/lumiere-ui",
+    "description": "A set of laravel view components",
+    "keywords": ["laravel", "laravel framework", "lumen", "illuminate"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Yannoff",
+        "homepage": "https://github.com/yannoff"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Yannoff\\Lumiere\\UI\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "illuminate/view": "*",
+        "illuminate/support": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yannoff\\Lumiere\\UI\\ServiceProvider"
+            ]
+        }
+    }
+}
