@@ -17,28 +17,28 @@ composer require yannoff/lumiere-ui
 
 ## Reference
 
-### `x-header`
+### `x-heading`
 
-_Generate a header block with an apposite anchor._
+_Generate a heading block with an apposite anchor._
 
 #### Attributes
 
 Name|Required|Description
 ---|---|---
-level|yes|The header level (1 to 6)
+level|yes|The heading level (1 to 6)
 
 #### Example
 
 ```xml
-<x-header level="2">
-    My Header 2
-</x-header>
+<x-heading level="2">
+    My Heading 2
+</x-heading>
 ```
 
 _will render as_
 
 ```html
-<h2><a name="my-header-2">My Header 2</a></h2>
+<h2><a name="my-heading-2">My Heading 2</a></h2>
 ```
 
 ### `x-md`

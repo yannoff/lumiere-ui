@@ -5,6 +5,7 @@ namespace Yannoff\Lumiere\UI;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Yannoff\Lumiere\UI\View\Components\Header;
+use Yannoff\Lumiere\UI\View\Components\Heading;
 use Yannoff\Lumiere\UI\View\Components\Md;
 
 /**
@@ -19,6 +20,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     protected $components = [
         'md' => Md::class,
+        'heading' => Heading::class,
+        // DEPRECATED: To be removed in 1.0
         'header' => Header::class,
     ];
 
