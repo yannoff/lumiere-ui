@@ -42,7 +42,7 @@ class Heading extends Component
             $title = $data['slot'];
             $level = $data['attributes']['level'] ?? 1;
             $link = Str::slug($title);
-            return sprintf('<h%1$s><a name="%3$s">%2$s</a></h%1$s>', $level, $title, $link);
+            return sprintf('<h%1$s><a name="%3$s" href="#%3$s">%2$s</a></h%1$s>', $level, $title, $link);
         };
     }
 }

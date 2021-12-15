@@ -38,7 +38,7 @@ level|yes|The heading level (1 to 6)
 _will render as_
 
 ```html
-<h2><a name="my-heading-2">My Heading 2</a></h2>
+<h2><a name="my-heading-2" href="#my-heading-2">My Heading 2</a></h2>
 ```
 
 ### `x-md`
