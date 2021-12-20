@@ -49,13 +49,11 @@ _Basic renderer for simple markdown._
 
 Here is the thorough list of the supported markdown syntax modifiers:
 
-Modifier|Description
----|---
-Double underscore|Make the text bold
-Double asterisk|Make the text bold
-Simple underscore|Make the text italic
-Simple asterisk|Make the text italic
-Backticks|Wrap the text with `<code>` tags
+Type|Modifier|Example|Description
+---|---|---|---
+**Bold format**|Double underscore / asterisk| `**my bold text**`|Wrap the text with `<b>` tags
+**Italic format**|Simple underscore / asterisk| `_my italic text_` |Wrap the text with `<i>` tags
+**Inline code**|Backticks| `` `my code snippet` ``|Wrap the text with `<code>` tags
 
 
 #### Example
