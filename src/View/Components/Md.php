@@ -47,6 +47,12 @@ class Md extends Component
             $slot2 = preg_replace('/\*([^\*]*)\*/', '<i>\1</i>', $slot2);
             // Handle code excerpts
             $slot2 = preg_replace('/`([^`]*)`/', '<code>\1</code>', $slot2);
+            // Handle natural links
+            $slot2 = preg_replace('#(http(s)?://([^ ]*))#', '<a href="\1">\1</a>', $slot2);
+            // Handle custom links: support both [label](url) and [label](url "title") formats
+            $slot2 = preg_replace_callback('/\[([^\]]*)\]\(([^\) ]*)( "([^"]*)")?\)/', function ($matches) {
+                return sprintf('<a href="%s" title="%s">%s</a>', $matches[2], ($matches[4] ?? $matches[1]), $matches[1]);
+            }, $slot2);
 
             return $slot2;
         };

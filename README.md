@@ -51,9 +51,11 @@ Here is the thorough list of the supported markdown syntax modifiers:
 
 Type|Modifier|Example|Description
 ---|---|---|---
-**Bold format**|Double underscore / asterisk| `**my bold text**`|Wrap the text with `<b>` tags
-**Italic format**|Simple underscore / asterisk| `_my italic text_` |Wrap the text with `<i>` tags
+**Bold**|Double underscore / asterisk| `**my bold text**`|Wrap the text with `<b>` tags
+**Italic**|Simple underscore / asterisk| `_my italic text_` |Wrap the text with `<i>` tags
 **Inline code**|Backticks| `` `my code snippet` ``|Wrap the text with `<code>` tags
+**URLs**|-| `https://site.com`|Wrap the URL in a `<a>` tag
+**Links**|Braquets| `[Site](https://site.com)`|Renders a `<a>` tag
 
 
 #### Example
@@ -61,14 +63,16 @@ Type|Modifier|Example|Description
 
 ```html
 <x-md>
-    The `yannoff/lumiere-ui` component is **awesome**
+    The `yannoff/lumiere-ui` component is **awesome**.
+    See the [repository](https://github.com/yannoff/lumiere-ui "Lumiere Github repo").
 <x-md>
 ```
 
 _will render as_
 
 ```html
-The <code>yannoff/lumiere-ui</code> component is <b>awesome</b>
+The <code>yannoff/lumiere-ui</code> component is <b>awesome</b>.
+See the <a href="https://github.com/yannoff/lumiere-ui" title="Lumiere Github repo">repository</a>.
 ```
 
 ## License
